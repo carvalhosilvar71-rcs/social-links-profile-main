@@ -30,6 +30,11 @@
     box-sizing: border-box;
  }
 
+ html,body{
+    height: 100%;
+    width: 100%;
+ }
+
  body{
     font-family: inter, sans-serif;
     background-color: rgb(0, 2, 5);
@@ -38,6 +43,9 @@
  main{
     height: 100%;
     width: 100%;
+
+    display: grid; 
+    place-items: center;
  }
 
  section{
@@ -45,7 +53,7 @@
     width: 100%;
     max-width: 320px;
     border-radius: 16px;
-    padding: 20px;
+    padding: 24px;
 
     text-align: center;
  }
@@ -77,7 +85,11 @@
  }
 
  li{
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+ }
+
+ li:last-child{
+    margin-bottom: 0;
  }
 
  a{
